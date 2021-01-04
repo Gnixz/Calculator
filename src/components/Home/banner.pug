@@ -1,0 +1,23 @@
+// Start Banner
+.banner
+  form.calculator(name="calc" action="")
+    input.value(type="text" readonly name="txt")
+    span.num.clear(onclick="calc.txt.value = ''") c
+    span.num(onclick="calc.txt.value += '/'") /
+    span.num(onclick="calc.txt.value += '*'") *
+    span.num(onclick="calc.txt.value += '7'") 7
+    span.num(onclick="calc.txt.value += '8'") 8
+    span.num(onclick="calc.txt.value += '9'") 9
+    span.num(onclick="calc.txt.value += '-'") -
+    span.num(onclick="calc.txt.value += '4'") 4
+    span.num(onclick="calc.txt.value += '5'") 5
+    span.num(onclick="calc.txt.value += '6'") 6
+    span.num.plus(onclick="calc.txt.value += '+'") +
+    span.num(onclick="calc.txt.value += '1'") 1
+    span.num(onclick="calc.txt.value += '2'") 2
+    span.num(onclick="calc.txt.value += '3'") 3
+    span.num(onclick="calc.txt.value += '0'") 0
+    span.num(onclick="calc.txt.value += '00'") 00
+    span.num(onclick="calc.txt.value += '.'") .
+    span.num.equal(onclick="calc.txt.value = eval(calc.txt.value)") =
+// End Banner

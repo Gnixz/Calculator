@@ -1,0 +1,168 @@
+// Start Footer
+.footer {
+  position: relative;
+  .footerTop {
+    position: relative;
+    padding: 60px 0;
+    background-color: #262626;
+    color: #858585;
+    &__logo {
+      @include breakpoint(767) {
+        margin-bottom: 50px;
+      }
+      &-image {
+        margin-bottom: 35px;
+        cursor: pointer;
+        img {
+          height: 35px;
+          width: auto;
+        }
+      }
+      &-text {
+        margin-bottom: 40px;
+      }
+      &-contact {
+        .contact__item {
+          position: relative;
+          padding-left: 30px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 25px;
+          &-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 18px;
+            color: #858585;
+          }
+          &-text {
+            color: #858585;
+            transition: 0.2s;
+            span {
+              color: #fab702;
+              transition: 0.2s;
+            }
+            &:hover {
+              color: #fab702;
+              span {
+                color: #858585;
+              }
+            }
+          }
+        }
+      }
+      &-icon {
+        @include breakpoint(991) {
+          margin-bottom: 50px;
+        }
+        .icon__link {
+          font-size: 18px;
+          margin: 0 10px;
+          color: #858585;
+          transition: 0.2s;
+          &:first-child {
+            margin: 0 10px 0 0;
+          }
+          &:hover {
+            color: #fab702;
+          }
+        }
+      }
+    }
+    &__tag {
+      @include breakpoint(767) {
+        margin-bottom: 50px;
+      }
+      &-title {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 23px;
+        color: white;
+        text-transform: uppercase;
+      }
+      .divider {
+        margin: 10px 0 40px;
+      }
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        .list__item {
+          &-link {
+            color: #858585;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: 7px;
+            margin-right: 6px;
+            padding: 1px 18px;
+            text-transform: uppercase;
+            transition: 0.2s color, 0.2s border-color;
+            border-color: #3a3a3a;
+            &:hover {
+              color: #fab702;
+              border-color: #fab702;
+            }
+          }
+        }
+      }
+    }
+    &__hour {
+      &-title {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 23px;
+        color: white;
+        text-transform: uppercase;
+      }
+      .divider {
+        margin: 10px 0 40px;
+      }
+      table {
+        width: 100%;
+        tbody {
+          tr {
+            &:first-child > * {
+              padding-top: 0;
+            }
+            th,
+            td {
+              padding: 6px 0;
+              position: relative;
+              line-height: 26px;
+              &::after {
+                bottom: -1px;
+                content: "";
+                display: block;
+                height: 1px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                background: #3a3a3a;
+              }
+            }
+            td {
+              text-align: right;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footerBottom {
+    position: relative;
+    padding: 30px 0;
+    background: #0f0f0f;
+    text-align: center;
+    &__content {
+      color: #858585;
+      a {
+        color: #858585;
+        &:hover {
+          color: #fab702;
+        }
+      }
+    }
+  }
+}
+// End Footer
